@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  color: #fff;
+  font-family: sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', cursive; }
+
+/***************************
+ Header Section CSS Start
+****************************/
+header {
+  padding: 7px 0px;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1111; }
+  header .fa {
+    font-size: 30px;
+    color: #333; }
+  header .navbaraz li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Righteous', cursive; }
+  header .navbaraz li a:hover {
+    color: #ffc107; }
+
+header.sticky {
+  border-bottom: 3px solid #ffc107;
+  padding: 7px 0px;
+  background: #14121ae8; }
+
+/*************************
+Home Section CSS Start
+**************************/
+#home-section {
+  background-image: url("../img/H1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 580px;
+  position: relative;
+  overflow: hidden; }
+  #home-section .dark-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 580px; }
+  #home-section .inner-home {
+    padding-top: 180px; }
+  #home-section .home-section-content h1 {
+    font-family: 'Righteous', cursive; }
+  #home-section .home-section-content h2 {
+    font-family: arial black; }
+  #home-section .typeWrite h2 {
+    font-family: 'Righteous', cursive; }
+  #home-section .social-icon-main {
+    margin-top: 35px; }
+  #home-section .social-icons {
+    justify-content: center; }
+  #home-section .social-icons li a {
+    margin-right: 10px;
+    padding: 6px 8px;
+    border-radius: 20px;
+    vertical-align: middle;
+    border: 1px solid white; }
+  #home-section .social-icons li a:hover {
+    background: #ffc107 !important; }
+  #home-section .social-icons li a img {
+    width: 15px;
+    margin-top: -2px; }
+
+#home-section:before {
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: -80px;
+  left: 0;
+  height: 25%;
+  width: 58%;
+  transform: skewy(-10deg);
+  z-index: 1; }
+
+#home-section:after {
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: -80px;
+  right: 0;
+  height: 25%;
+  width: 58%;
+  transform: skewy(10deg);
+  z-index: 1; }
+
+/*************************
+About Section CSS Start
+**************************/
+#about-section .container h1 {
+  font-family: 'Righteous', cursive; }
+
+#about-section .about-row {
+  margin-top: 60px; }
+
+/*************************
+Service Section CSS Start
+**************************/
+#service-section {
+  background-image: url("../img/S-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden; }
+  #service-section .title-server {
+    z-index: 1111; }
+  #service-section a {
+    color: #333;
+    font-size: 20px;
+    background: #ffc107;
+    transition: all 0.3s ease 0s;
+    text-decoration: none; }
+  #service-section a:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid black; }
+  #service-section .serviceBox {
+    background: linear-gradient(to right, #fbdd13, #047c4f);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px 30px 25px;
+    margin: 10px 0 0 0;
+    border-radius: 0 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1; }
+  #service-section .serviceBox:hover {
+    background: white; }
+  #service-section .serviceBox:before {
+    content: "";
+    background: #000;
+    width: calc(100% - 10px);
+    height: 100%;
+    border-radius: 0 30px 0 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: -1; }
+  #service-section .serviceBox .service-icon {
+    color: #fff;
+    background: linear-gradient(to right, #103420 50%, #00ff08 130%);
+    font-size: 40px;
+    width: 70%;
+    padding: 8px 0 6px;
+    margin: 0 0 35px -30px;
+    border-radius: 0 50px 50px 0;
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2) inset; }
+  #service-section .serviceBox .title {
+    color: #ff9901;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px; }
+  #service-section .serviceBox .title:after {
+    content: '';
+    background-color: #ff9901;
+    height: 2px;
+    width: 60%;
+    margin: 5px auto 0;
+    display: block;
+    clear: both; }
+  #service-section .serviceBox .description {
+    color: #999;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: justify;
+    margin: 0 0 25px; }
+  #service-section .serviceBox .read-more i {
+    font-size: 11px; }
+  #service-section .serviceBox.green {
+    background: linear-gradient(to right, #ABED1A, #38AE3E); }
+  #service-section .serviceBox.green .service-icon {
+    background: linear-gradient(to right, #ABED1A 50%, #38AE3E 130%); }
+  #service-section .serviceBox.green .title {
+    color: #38AE3E; }
+  #service-section .serviceBox.green .title:after {
+    background-color: #38AE3E; }
+  #service-section .serviceBox.green .read-more:hover {
+    color: #38AE3E; }
+
+#service-section:before {
+  content: "";
+  position: absolute;
+  background: #14121a;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+/*************************
+Myskills Section CSS Start
+**************************/
+#my-skills h3 {
+  font-size: 18px; }
+
+#my-skills h4 {
+  font-size: 18px; }
+
+/*************************
+Portfolio Section CSS Start
+**************************/
+#portfolio-section .card-body {
+  overflow: hidden; }
+
+#portfolio-section .card-body img {
+  transition: .8s;
+  -webkit-transition: .8s; }
+
+#portfolio-section .card-body:hover img {
+  transform: scale(1.2); }
+
+#portfolio-section .text-dark {
+  text-decoration: none;
+  font-size: 14px; }
+
+#portfolio-section .text-dark:hover {
+  background: #000000; }
+
+/********************************
+Life journey Section CSS Start
+**********************************/
+#life-journey {
+  background-image: url("../img/L-bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed; }
+  #life-journey img {
+    width: 100px; }
+
+#life-journey:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+/*---------------------
+  Faq
+-----------------------*/
+.faq__accordion .section-title {
+  margin-bottom: 34px; }
+
+.faq__accordion .section-title h2 {
+  font-size: 32px; }
+
+.faq__accordion .card {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 36px; }
+
+.faq__accordion .card:last-child {
+  margin-bottom: 0; }
+
+.faq__accordion .card-heading {
+  cursor: pointer; }
+
+.faq__accordion .card-heading a {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 700;
+  line-height: 24px;
+  display: block;
+  padding-left: 30px; }
+
+.faq__accordion .card:last-child .card-heading {
+  border-bottom: none; }
+
+.faq__accordion .card .card-body {
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 14px; }
+
+.faq__accordion .card .card-body p {
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+  margin-bottom: 0; }
+
+.faq__accordion .card-heading a:after,
+.faq__accordion .card-heading > a.active[aria-expanded=false]:after {
+  content: "+";
+  font-size: 24px;
+  color: #f3bd00;
+  position: absolute;
+  left: 0;
+  top: -1px; }
+
+.faq__accordion .card-heading.active a:after {
+  content: "-";
+  font-size: 24px;
+  color: #f3bd00;
+  position: absolute;
+  left: 0;
+  top: -3px; }
+
+.faq__accordion .card-heading a[aria-expanded=true]:after,
+.faq__accordion .card-heading > a.active:after {
+  content: "-";
+  font-size: 32px;
+  font-weight: 400;
+  color: #f3bd00;
+  position: absolute;
+  right: 0;
+  top: -3px; }
+
+.faq__form .section-title {
+  margin-bottom: 34px; }
+
+.faq__form .section-title h2 {
+  font-size: 32px; }
+
+.faq__form form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-left: 20px;
+  margin-bottom: 20px; }
+
+.faq__form form input::-webkit-input-placeholder {
+  color: #444444; }
+
+.faq__form form input::-moz-placeholder {
+  color: #444444; }
+
+.faq__form form input:-ms-input-placeholder {
+  color: #444444; }
+
+.faq__form form input::-ms-input-placeholder {
+  color: #444444; }
+
+.faq__form form input::placeholder {
+  color: #444444; }
+
+.faq__form form textarea {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-top: 12px;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  resize: none; }
+
+.faq__form form textarea::-webkit-input-placeholder {
+  color: #444444; }
+
+.faq__form form textarea::-moz-placeholder {
+  color: #444444; }
+
+.faq__form form textarea:-ms-input-placeholder {
+  color: #444444; }
+
+.faq__form form textarea::-ms-input-placeholder {
+  color: #444444; }
+
+.faq__form form textarea::placeholder {
+  color: #444444; }
+
+.faq__form form button {
+  width: 100%; }
+
+/*---------------------
+  Contact
+-----------------------*/
+.contact__address h4 {
+  color: #111111;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.contact__address ul li {
+  overflow: hidden;
+  list-style: none;
+  margin-bottom: 40px; }
+
+.contact__address ul li:last-child {
+  margin-bottom: 0; }
+
+.contact__address ul li .icon {
+  font-size: 20px;
+  color: #f3bd00;
+  height: 50px;
+  width: 50px;
+  background: #0c2b4b;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin-right: 20px; }
+
+.contact__address ul li p {
+  overflow: hidden;
+  margin-bottom: 0;
+  color: #111111; }
+
+.contact__address ul li p span {
+  display: block; }
+
+.contact__form h4 {
+  color: #111111;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.contact__form form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-left: 20px;
+  margin-bottom: 30px; }
+
+.contact__form form input::-webkit-input-placeholder {
+  color: #444444; }
+
+.contact__form form input::-moz-placeholder {
+  color: #444444; }
+
+.contact__form form input:-ms-input-placeholder {
+  color: #444444; }
+
+.contact__form form input::-ms-input-placeholder {
+  color: #444444; }
+
+.contact__form form input::placeholder {
+  color: #444444; }
+
+.contact__form form textarea {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-top: 12px;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  resize: none; }
+
+.contact__form form textarea::-webkit-input-placeholder {
+  color: #444444; }
+
+.contact__form form textarea::-moz-placeholder {
+  color: #444444; }
+
+.contact__form form textarea:-ms-input-placeholder {
+  color: #444444; }
+
+.contact__form form textarea::-ms-input-placeholder {
+  color: #444444; }
+
+.contact__form form textarea::placeholder {
+  color: #444444; }
+
+.contact__form form button {
+  width: 100%; }
+
+/*---------------------
+  Map
+-----------------------*/
+.map {
+  height: 400px;
+  margin-top: 60px; }
+
+.map iframe {
+  width: 100%; }
+
+/*---------------------
+  Footer section
+-----------------------*/
+#footer {
+  background: black; }
+  #footer img {
+    width: 200px; }
+  #footer a, #footer .address-footer, #footer .address-title {
+    color: #c4c4c4;
+    font-size: 15px; }
+  #footer .footer__copyright__text {
+    background: #14121ae8; }
+
+/******************************
+      Responsive Code CSS Start
+   *******************************/
+@media (min-width: 991px) {
+  #portfolio-section .d-inline {
+    font-size: 16px !important; }
+  #portfolio-section .rounded {
+    font-size: 12px; } }
+
+@media (max-width: 768px) {
+  header {
+    background: #14121ae8; }
+  .home-section-content h1 {
+    font-size: 36px; }
+  #service-section h1 {
+    font-size: 36px; }
+  #service-section a {
+    font-size: 18px; } }
+
+@media (max-width: 268px) {
+  #service-section a {
+    font-size: 14px; } }
+
+/******************************
+   Responsive Code CSS End
+*******************************/
